@@ -1,0 +1,16 @@
+.header {
+  height: 9.6rem;
+  padding: 0 4.6rem;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    background-color: antiquewhite;
+    flex: 1;
+  }
+
+  .nav {
+    background-color: azure;
+    flex: 1;
+  }
+}

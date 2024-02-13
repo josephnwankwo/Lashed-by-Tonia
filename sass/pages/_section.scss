@@ -1,0 +1,36 @@
+.hero-section {
+  .hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+
+    .hero--text-box {
+      background-color: brown;
+    }
+
+    .hero--img-box {
+      background-color: blueviolet;
+    }
+  }
+}
+
+.services-section {
+  .services--text-box {
+    background-color: blanchedalmond;
+  }
+
+  .services--img-box {
+    background-color: black;
+  }
+}
+
+.choose-section {
+  .choose-box {
+    background-color: red;
+  }
+}
+
+.contact-section {
+  height: 20rem;
+  background-color: bisque;
+}
