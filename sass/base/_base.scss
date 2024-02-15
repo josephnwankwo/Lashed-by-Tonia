@@ -16,4 +16,9 @@ body {
   font-family: "karma", serif;
   line-height: 1;
   font-weight: 400;
+  color: $color-grey;
+}
+
+body a {
+  cursor: pointer;
 }
