@@ -20,12 +20,30 @@
 }
 
 .services-section {
-  .services--text-box {
-    background-color: blanchedalmond;
-  }
+  padding: 9.6rem 0;
 
   .services--img-box {
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .services-img {
+    width: 35rem;
+    height: 35rem;
+    object-fit: cover;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .services-img:hover {
+    transform: scale(1.1);
+  }
+
+  .services-decription {
+    font-size: 1.8rem;
+    line-height: 1.8;
   }
 }
 
