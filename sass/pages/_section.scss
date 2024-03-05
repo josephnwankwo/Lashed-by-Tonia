@@ -2,7 +2,7 @@
   background-color: $color-main;
   .hero {
     // max-width: 130rem;
-    height: 85vh;
+    height: 90vh;
     margin: 0 auto;
     // padding: 0 3.2rem;
 
@@ -21,7 +21,7 @@
     .hero--text-box::before {
       content: "Beauty";
       position: absolute;
-      top: 20%;
+      top: 25%;
       left: -4%;
       color: #fff;
       font-size: 20rem;
@@ -40,6 +40,13 @@
 
 .services-section {
   padding: 9.6rem 0;
+
+  .services--text-box {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   .services--img-box {
     display: flex;

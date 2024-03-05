@@ -14,6 +14,7 @@
     ></script>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
       href="/asset/images/favicon.jpeg"
@@ -38,14 +39,22 @@
     <main>
       <section class="hero-section">
         <div class="hero grid grid--2-cols">
-          <div class="hero--text-box">
+          <div
+            class="hero--text-box"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             <div class="heading-primary">
               Lashes &<br />
               Brows Tech
             </div>
             <a href="#" class="btn">Book an appointment</a>
           </div>
-          <div class="hero--img-box"></div>
+          <div
+            class="hero--img-box"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          ></div>
         </div>
       </section>
 
@@ -57,7 +66,11 @@
 
         <div class="container grid grid--2-cols">
           <!-- Services 1 -->
-          <div class="services--text-box">
+          <div
+            class="services--text-box"
+            data-aos="fade-right"
+            data-aos-offset="300"
+          >
             <h3 class="heading-tertiary">Eyelash extension</h3>
             <p class="services-decription">
               Our expert technicians will customize your eyelash extensions to
@@ -66,7 +79,11 @@
               your desired effect.
             </p>
           </div>
-          <div class="services--img-box">
+          <div
+            class="services--img-box"
+            data-aos="fade-left"
+            data-aos-offset="300"
+          >
             <img
               src="/asset/images/service-1.jpg"
               alt="A woman extending lashes"
@@ -75,14 +92,22 @@
           </div>
 
           <!-- Services 2 -->
-          <div class="services--img-box">
+          <div
+            class="services--img-box"
+            data-aos="fade-right"
+            data-aos-offset="300"
+          >
             <img
               src="/asset/images/service-2.jpg"
               alt="A woman removing lashes"
               class="services-img"
             />
           </div>
-          <div class="services--text-box">
+          <div
+            class="services--text-box"
+            data-aos="fade-left"
+            data-aos-offset="300"
+          >
             <h3 class="heading-tertiary">Lash removal</h3>
             <p class="services-decription">
               If you're ready for a change or simply want to give your lashes a
@@ -93,7 +118,11 @@
           </div>
 
           <!-- Services 3 -->
-          <div class="services--text-box">
+          <div
+            class="services--text-box"
+            data-aos="fade-right"
+            data-aos-offset="300"
+          >
             <h3 class="heading-tertiary">Lash maintenance</h3>
             <p class="services-decription">
               Keep your lashes looking their best with our maintenance services.
@@ -102,7 +131,11 @@
               between appointments.
             </p>
           </div>
-          <div class="services--img-box">
+          <div
+            class="services--img-box"
+            data-aos="fade-left"
+            data-aos-offset="300"
+          >
             <img
               src="/asset/images/service-3.jpg"
               alt="A woman maintaining a customer's lashes"
@@ -112,7 +145,11 @@
         </div>
       </section>
 
-      <section class="benefits-section">
+      <section
+        class="benefits-section"
+        data-aos="fade-up"
+        data-aos-offset="600"
+      >
         <div class="container">
           <!-- <span class="subheading"></span> -->
           <h2 class="heading-secondary">Benefits</h2>
@@ -160,7 +197,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section class="contact-section" data-aos="fade-up" data-aos-offset="600">
         <div class="container contact-background">
           <h2 class="heading-secondary">Lash perfection awaits you</h2>
           <div><a href="#" class="btn">Book an appointment</a></div>
@@ -202,5 +239,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
