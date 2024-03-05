@@ -49,12 +49,18 @@
   &-icon {
     border: 2px solid $color-accent;
     background-color: #fff;
-    color: $color-accent--dark;
+    color: $color-accent;
     border-radius: 50%;
     height: 2rem;
     width: 2rem;
     margin-bottom: 3.2rem;
     padding: 0.2rem;
     cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-accent--dark;
+      color: #fff;
+    }
   }
 }
