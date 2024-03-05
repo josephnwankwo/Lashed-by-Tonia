@@ -1,26 +1,45 @@
 .hero-section {
   background-color: $color-main;
   .hero {
-    max-width: 130rem;
+    // max-width: 130rem;
+    height: 85vh;
     margin: 0 auto;
-    padding: 0 3.2rem;
+    // padding: 0 3.2rem;
 
     .hero--text-box {
-      background-color: brown;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      padding-top: 8rem;
+      padding-left: 6.4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero--text-box::before {
+      content: "Beauty";
+      position: absolute;
+      top: 20%;
+      left: -4%;
+      color: #fff;
+      font-size: 20rem;
+      font-family: "Amita", serif;
+      z-index: -1;
     }
 
     .hero--img-box {
-      background-color: blueviolet;
+      background-image: url(/asset/images/hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 }
 
-.sales-section {
-  background-color: red;
-}
-
 .services-section {
-  padding: 4.8rem 0 9.6rem 0;
+  padding: 9.6rem 0;
 
   .services--img-box {
     display: flex;
@@ -47,10 +66,10 @@
   }
 }
 
-.choose-section {
+.benefits-section {
   padding: 9.6rem 0;
 
-  .choose-icon {
+  .benefits-icon {
     color: $color-accent;
     background-color: $color-main;
     border-radius: 50%;
@@ -60,13 +79,13 @@
     padding: 1.6rem;
   }
 
-  .choose-title {
+  .benefits-title {
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 1.6rem;
   }
 
-  .choose-text {
+  .benefits-text {
     font-size: 1.8rem;
     line-height: 1.8;
   }
@@ -79,6 +98,29 @@
 }
 
 .contact-section {
-  height: 20rem;
-  background-color: bisque;
+  padding: 9.6rem 0;
+
+  .contact-background {
+    height: 40rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: radial-gradient(
+      transparent 20%,
+      $color-accent,
+      $color-accent--dark
+    );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-background h2 {
+    color: $color-accent;
+  }
 }
