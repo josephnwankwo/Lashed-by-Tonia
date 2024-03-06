@@ -10,6 +10,26 @@ html {
   //this defines what 1 rem is
   font-size: 62.5%; // 1rem = 10px
   scroll-behavior: smooth;
+
+  /* Below 1264px (smaller laptops) */
+  @media (max-width: 79em) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  /* Below 1136px (Lanscape tablets) */
+  @media (max-width: 71em) {
+    font-size: 53.125%; // 1rem = 8.5px
+  }
+
+  /* Below 976px (tablets) */
+  @media (max-width: 61em) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  /* Below 736px (Big Phone) */
+  @media (max-width: 46em) {
+    font-size: 43.75%; // 1rem = 7px
+  }
 }
 
 body {
