@@ -67,7 +67,9 @@
     .hero--img-box {
       /* Below 640px (Phone) */
       @media (max-width: 40em) {
-        display: none;
+        height: 20rem;
+        width: 80%;
+        margin: 0 auto;
       }
     }
 
