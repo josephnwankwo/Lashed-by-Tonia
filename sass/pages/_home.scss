@@ -55,16 +55,11 @@
         top: 30%;
       }
 
-      /* Below 736px (Big Phone) */
+      /* Below 640px (Phone) */
       @media (max-width: 40em) {
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 50%;
-      }
-
-      /* Below 640px (Phone) */
-      @media (max-width: 40em) {
-        height: 40%;
+        top: 40%;
         font-size: 12rem;
       }
     }
