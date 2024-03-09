@@ -9,6 +9,71 @@
     display: flex;
     align-items: center;
     gap: 6.4rem;
+
+    /* Below 640px (Phone) */
+    @media (max-width: 40em) {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: $color-main;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      transform: translateX(-100%);
+      transition: 300ms ease;
+      transition-property: transform;
+    }
+  }
+
+  .navigation-button {
+    position: relative;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+
+    /* Below 640px (Phone) */
+    @media (max-width: 40em) {
+      display: flex;
+      z-index: 1000;
+    }
+  }
+
+  .navigation-icon {
+    width: 4rem;
+    transition: background-color 300ms ease;
+
+    &,
+    &::after,
+    &::before {
+      display: inline-block;
+      height: 3px;
+      background-color: $color-grey;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3rem;
+      left: 20%;
+      transition: 300ms ease;
+      transition-property: top, bottom, transform;
+    }
+
+    &::before {
+      top: 25%;
+    }
+
+    &::after {
+      bottom: 25%;
+    }
   }
 
   .nav-link:link,
@@ -19,6 +84,11 @@
     font-weight: 600;
     color: inherit;
     transition: all 0.3s;
+
+    /* Below 640px (Phone) */
+    @media (max-width: 40em) {
+      font-size: 2.4rem;
+    }
   }
 
   .nav-link:hover,

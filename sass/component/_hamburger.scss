@@ -1,0 +1,30 @@
+#checkbox {
+  display: none;
+
+  &:checked + .navigation-button .navigation-icon {
+    background-color: transparent;
+  }
+
+  &:checked + .navigation-button .navigation-button {
+    position: fixed;
+  }
+
+  &:checked + .navigation-button .navigation-icon::before {
+    transform: rotate(-45deg);
+    top: 50%;
+  }
+
+  &:checked + .navigation-button .navigation-icon::after {
+    transform: rotate(45deg);
+    bottom: 42%;
+  }
+
+  &:checked ~ .nav-list {
+    transform: translateX(0%);
+  }
+
+  //   &:checked ~ .navigation__list__background {
+  //     opacity: 1;
+  //     visibility: visible;
+  //   }
+}
