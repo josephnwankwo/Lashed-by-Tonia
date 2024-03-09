@@ -77,6 +77,11 @@ bold: 700
   @media (max-width: 55em) {
     font-size: 3.6rem;
   }
+
+  /* Below 640px (Phone) */
+  @media (max-width: 40em) {
+    margin-bottom: 6.4rem;
+  }
 }
 
 .heading-tertiary {
