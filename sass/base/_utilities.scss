@@ -7,18 +7,18 @@
 .grid {
   display: grid;
   column-gap: 8rem;
-  row-gap: 9.6rem;
+  row-gap: 15rem;
 
   /* Below 1136px (Lanscape tablets) */
   @media (max-width: 71em) {
     column-gap: 6.4rem;
-    row-gap: 8rem;
+    row-gap: 13rem;
   }
 
   /* Below 736px (Phone) */
   @media (max-width: 40em) {
     column-gap: 4.8rem;
-    row-gap: 6.4rem;
+    row-gap: 10rem;
   }
 }
 
@@ -47,8 +47,12 @@
 
 .logo {
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 600;
   color: $color-grey;
   font-family: "cormorant", serif;
+}
+
+.overflowX {
+  overflow-x: hidden;
 }

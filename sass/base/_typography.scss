@@ -110,6 +110,11 @@ bold: 700
     font-size: 1.6rem;
     line-height: 1.6;
   }
+
+  /* Below 736px (Phone) */
+  @media (max-width: 40em) {
+    font-size: 1.8rem;
+  }
 }
 // .subheading {
 //   display: block;
