@@ -17,6 +17,11 @@
     justify-content: center;
     gap: 6.4rem;
     list-style: none;
+
+    /* Below 640px (Phone) */
+    @media (max-width: 40em) {
+      gap: 4.8rem;
+    }
   }
 
   &-link:link,
