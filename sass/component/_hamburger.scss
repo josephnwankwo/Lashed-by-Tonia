@@ -5,18 +5,18 @@
     background-color: transparent;
   }
 
-  &:checked + .navigation-button .navigation-button {
+  &:checked + .navigation-button .navigation-icon {
     position: fixed;
   }
 
   &:checked + .navigation-button .navigation-icon::before {
     transform: rotate(-45deg);
-    top: 50%;
+    top: 10%;
   }
 
   &:checked + .navigation-button .navigation-icon::after {
     transform: rotate(45deg);
-    bottom: 42%;
+    bottom: 15%;
   }
 
   &:checked ~ .nav-list {

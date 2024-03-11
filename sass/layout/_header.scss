@@ -92,7 +92,8 @@
   }
 
   .nav-link:hover,
-  .nav-link:active {
+  .nav-link:active,
+  .nav-link.active {
     color: $color-accent--dark;
   }
 
